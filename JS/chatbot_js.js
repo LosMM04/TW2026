@@ -20,6 +20,19 @@ let questions = [
         correctAnswer: "a",
         correctResponse: "Foarte tare! Munca în echipă e cheia succesului!",
         incorrectResponse: "O să găsim soluții împreună, nu-ți face griji"
+        
+    },
+    {
+        question: "O intrebare in plus e necesara?",
+        options: {
+            a: "Da",
+            b: "Nu sunt sigur",
+            c: "Nu...."
+        },
+        correctAnswer: "b",
+        correctResponse: "Nimic nu e sigur",
+        incorrectResponse: "Mai incearca..."
+        
     }
 ];
 
