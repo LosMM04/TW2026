@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 40px 20px;
+}
+
+header {
+    background-color: #222b36;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+header nav a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.column h2 {
+    margin-bottom: 10px;
+    color: #222b36;
+}
+
+.column p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #222b36;
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #1a202c;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #222b36;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Step 6. Responsive CSS */
+@media (max-width: 900px) {
+    main { width: 800px; }
+    .columns { justify-content: center; }
+    .column { width: 300px; }
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 350px;
+        padding: 10px 0;
+    }
+    .columns {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .column { width: 100%; }
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrează-te</title>
+    <link rel="stylesheet" href="../CSS/style.css?v=4">
+    <link rel="stylesheet" href="../CSS/register_style.css?v=4">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Înregistrează-te</h1>
+            <form class="register-form" action="#" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <label for="username">Nume utilizator</label>
+                    <input type="text" name="username" id="username" placeholder="ex:ioanaTW" required>
+                </div>
+
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="ex:nume@exemplu.com" required>
+                </div>
+
+                <div class="row two-col">
+                    <div>
+                        <label for="password">Parolă</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Confirmă parola</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="dob">Data nașterii</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+
+                <div class="row">
+                    <label>Gen</label>
+                    <div class="checkbox-grid">
+                        <label><input type="radio" name="gender" value="male"> Bărbat</label>
+                        <label><input type="radio" name="gender" value="female"> Femeie</label>
+                        <label><input type="radio" name="gender" value="other"> Altul</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="country">Tip cont</label>
+                    <select name="country" id="country">
+                        <option value="">Selectează</option>
+                        <option value="ro">România</option>
+                        <option value="md">Moldova</option>
+                        <option value="other">Altele</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>Interese</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="interests" value="frontend"> Frontend</label>
+                        <label><input type="checkbox" name="interests" value="backend"> Backend</label>
+                        <label><input type="checkbox" name="interests" value="uxui"> UX/UI</label>
+                        <label><input type="checkbox" name="interests" value="javascript"> JavaScript</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="profile_pic">Încarcă avatar</label>
+                    <input type="file" name="profile_pic" id="profile_pic">
+                </div>
+
+                <div class="row">
+                    <label for="bio">Scurtă descriere</label>
+                    <textarea name="bio" id="bio" placeholder="Scrie câteva cuvinte despre tine..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Creează cont</button>
+                    <button type="reset" class="btn ghost">Resetează</button>
+                </div>
+
+                <p class="login-link">Ai deja cont? <a href="login.html">Mergi la login</a></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
