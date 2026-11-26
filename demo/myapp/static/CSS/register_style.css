@@ -1,0 +1,140 @@
+html, body {
+    background: #e0e5ec;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;
+    background-color: #222b36;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #3498db;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Fix for checkboxes and radio buttons stretching */
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-grid label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background-color: #f1c40f;
+    color: #222b36;
+}
+
+.btn.primary:hover {
+    background-color: #e2b607;
+}
+
+.btn.ghost {
+    background-color: transparent;
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+
+.btn.ghost:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.login-link a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
